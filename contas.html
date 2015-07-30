@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html ng-app>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+      <title>IBUY</title>
+      <!-- CSS  -->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+      <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+      <link href="css/bootstrap-responsive.min.css" type="text/css" rel="stylesheet" />
+      <link href="bower_components/bootstrap-material-design/dist/css/material.min.css" type="text/css" rel="stylesheet" />
+      <link href="css/ibuy.css" type="text/css" rel="stylesheet" />
+   </head>
+   <body>
+      <header class="navbar" role="navigation">
+         <div class="nav-wrapper container">
+            <h1><a id="logo-container" href="#" class="brand-logo"><img src="img/logo.png" alt="ibuy"></a></h1>
+         </div>
+      </header>
+      <div class="banner" >
+         <div class="container">
+            <div class="col-md-12 ">
+               <img src="img/banner-information.png" alt="information ibuy">
+               <h2>Seu produto digital na prática</h2>
+               <p>Para a criação de produtos digitais usamos processos de inovação, tecnologia, engenharia ágil e conhecimento  do negócio</p>
+            </div>
+         </div>
+      </div>
+      <div class="barra-titulo">
+         <div class="container">
+            <i class="fa fa-credit-card"></i>
+            <h3> Contas a Pagar</h3>
+         </div>
+      </div>
+      <div class="container">
+         <div class="section">
+            <div class="table-responsive">
+               <table class="table table-hover">
+                  <thead>
+                     <tr>
+                        <th>Imagem</th>
+                        <th>Produto</th>
+                        <th>Quantidade</th>
+                        <th>Preço</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td><img src="img/picanha.jpg" alt="picanha"></td>
+                        <td>Picanha</td>
+                        <td>3</td>
+                        <td>R180,00</td>
+                     </tr>
+                     <tr>
+                        <td colspan="5">
+                           <button id="comprar" class="btn btn-primary">Comprar</button>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div>
+      </div>
+      <footer id="footer" class="page-footer">
+         <div class="footer-copyright">
+         <div class="container">
+            Copyright © 2015 - IBUY - Todos os direitos reservados 
+         </div>
+      </footer>
+      <!--  Scripts-->
+      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="js/angular-1.0.1.js"></script>
+      <script src="js/lista-compras.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+   </body>
+</html>

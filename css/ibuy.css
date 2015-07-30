@@ -1,0 +1,275 @@
+.centered {
+    width: 30em;
+    height: 30em;
+    margin-left: -15em;
+    margin-top: -15em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.centered h2,
+.centered i {
+    color: #fff;
+    font-size: 3em;
+    float: left;
+    margin: 10px;
+}
+.centered img {
+    display: block;
+    clear: both;
+    margin: 0 auto;
+}
+.centered .col-md-12 {
+    margin: 0 auto;
+    width: 50%;
+    /* Altere para o valor da largura desejada. */
+}
+.form-horizontal .form-group {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+html,
+body,
+#wrap {
+    height: 100%;
+}
+body > #wrap {
+    height: auto;
+    min-height: 100%;
+    background: rgba(67, 37, 118, 1);
+    background: -moz-linear-gradient(top, rgba(67, 37, 118, 1) 0%, rgba(82, 50, 127, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(67, 37, 118, 1)), color-stop(100%, rgba(82, 50, 127, 1)));
+    background: -webkit-linear-gradient(top, rgba(67, 37, 118, 1) 0%, rgba(82, 50, 127, 1) 100%);
+    background: -o-linear-gradient(top, rgba(67, 37, 118, 1) 0%, rgba(82, 50, 127, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(67, 37, 118, 1) 0%, rgba(82, 50, 127, 1) 100%);
+    background: linear-gradient(to bottom, rgba(67, 37, 118, 1) 0%, rgba(82, 50, 127, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#432576', endColorstr='#52327f', GradientType=0);
+}
+#main {
+    overflow: auto;
+    padding-bottom: 150px;
+}
+/* deve ter a mesma altura do rodapé */
+
+#footer {
+    position: relative;
+    height: 50px;
+    clear: both;
+}
+/*Opera Fix*/
+
+body:before {
+    content: "";
+    height: 100%;
+    float: left;
+    width: 0;
+    margin-top: -32767px;
+    /
+}
+<!--[if IE 8]> <style type="text/css"> #wrap {
+    display: table;
+}
+</style> <![endif]--> body {
+    background: #f2f3f4;
+}
+.navbar {
+    background-color: #341765;
+    background-image: -webkit-linear-gradient(bottom, #341765, #44217F);
+    background-image: linear-gradient(to top, #341765, #44217F);
+    z-index: 999;
+    position: fixed;
+    height: 97px;
+    top: 0;
+    width: 100%;
+}
+.navbar h1 {
+    line-height: 0;
+    margin-left: -20px;
+}
+.banner {
+    height: 32em;
+    background: url("../img/banner.jpg") top center;
+    background-size: cover;
+}
+.banner .col-md-12,
+.centered {
+    text-align: center;
+}
+.form-horizontal .control-label {
+    padding-top: 7px;
+    margin-bottom: 0;
+    text-align: left;
+    color: #fff;
+}
+.col-lg-12 .form-control {
+    color: #fff;
+}
+.centered .col-lg-12 button {
+    width: 100%;
+}
+.banner img {
+    margin-top: 9.6em;
+}
+.banner .col-md-12 h2 {
+    color: #fff;
+    font-size: 2.4em;
+    ;
+}
+.barra-titulo {
+    background: #14beef;
+    height: 4.8em;
+}
+.banner .col-md-12 p {
+    color: #14beef;
+    width: 31em;
+    font-size: 1.0em;
+    margin: 0 auto;
+    text-align: left;
+}
+.barra-titulo h3 {
+    font-size: 1.92em;
+    color: #fff;
+    padding-left: 0.8em;
+}
+.barra-titulo i {
+    color: #3E1E76;
+    font-size: 2.2em;
+    padding-top: 0.6em;
+}
+.barra-titulo h3,
+.barra-titulo i {
+    float: left;
+}
+.submit-lente {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    border: none;
+    background: transparent;
+    outline: none;
+}
+input[type=search] {
+    margin-left: 20px;
+    word-spacing: 20px;
+}
+.table {
+    width: 90%;
+    max-width: 95%;
+    margin: 4.8em;
+}
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
+    vertical-align: middle;
+    padding: 2.0em;
+}
+th {
+    border-bottom: 1px solid #fff;
+    background: #3E1E76;
+    color: #fff;
+}
+#lista-compras {
+    margin-top: 10px;
+}
+.comprado-true {
+    color: #F30754;
+    background-color: #f2f3f4;
+}
+footer.page-footer {
+    background-color: #14BEEF;
+    padding-top: 20px;
+}
+.section {
+    margin: 1.2em 0 1.2em 0;
+    background: #fff;
+    padding: 1em;
+    box-shadow: 0 2px 6px rgba(191, 191, 191, 0.56);
+}
+.section .col-md-8 {
+    margin: 2.0em 0em 2em 4.8em;
+}
+.section .col-md-4 {
+    margin: 1em 0em 0em 7em;
+}
+#lista-compras .btn {
+    margin: 0px 10px;
+}
+.btn-delete {
+    text-decoration: none;
+    color: #fff;
+    background-color: #fb0326;
+    text-align: center;
+    letter-spacing: .5px;
+    -webkit-transition: .2s ease-out;
+    -moz-transition: .2s ease-out;
+    -o-transition: .2s ease-out;
+    -ms-transition: .2s ease-out;
+    transition: .2s ease-out;
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    outline: 0;
+    padding: 0 2rem;
+    text-transform: uppercase;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+}
+#comprar .btn {
+    float: right;
+}
+.btn-delete:hover {
+    background-color: #fb0326;
+}
+td,
+th {
+    text-align: center;
+}
+.container {
+    max-width: 1280px;
+    width: 90%;
+    margin: 0 auto;
+}
+@media only screen and (max-width: 800px) {
+    .banner img {
+        width: 50%;
+    }
+    .banner .col-md-12 h2 {
+        font-size: 1.2em;
+    }
+    .banner .col-md-12 p {
+        width: 15em;
+        font-size: 1.0em;
+    }
+    .section .col-md-8 {
+        margin: 2.0em 0em 2em 0em;
+        width: 90%;
+    }
+    .section .col-md-4 {
+        margin: 1em 0em 0em 0em;
+        width: 90%;
+    }
+    .table {
+        width: 90%;
+        max-width: 95%;
+        margin: 0.8em;
+    }
+    #footer {
+        position: relative;
+        height: 80px;
+        clear: both;
+    }
+    .navbar h1 {
+        line-height: 0;
+        margin-left: 25px;
+    }
+    .col-xs-12 {
+        width: 98%;
+    }
+}

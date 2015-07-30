@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html ng-app>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+      <title>IBUY</title>
+      <!-- CSS  -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+      <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+      <link href="css/bootstrap-responsive.min.css" type="text/css" rel="stylesheet" />
+      <link href="bower_components/bootstrap-material-design/dist/css/material.min.css" type="text/css" rel="stylesheet" />
+      <link href="css/ibuy.css" type="text/css" rel="stylesheet" />
+   </head>
+   <body>
+      <header class="navbar" role="navigation">
+         <div class="nav-wrapper container">
+            <h1><a id="logo-container" href="#" class="brand-logo"><img src="img/logo.png" alt="ibuy"></a></h1>
+         </div>
+      </header>
+      <div class="banner" >
+         <div class="container">
+            <div class="col-md-12 ">
+               <img src="img/banner-information.png" alt="information ibuy">
+               <h2>Seu produto digital na prática</h2>
+               <p>Para a criação de produtos digitais usamos processos de inovação, tecnologia, engenharia ágil e conhecimento  do negócio</p>
+            </div>
+         </div>
+      </div>
+      <div class="barra-titulo">
+         <div class="container">
+            <i class="fa fa-file-text"></i>
+            <h3>Lista de Compras</h3>
+         </div>
+      </div>
+      <div class="container">
+         <div class="section">
+            <div class="" ng-controller="ListaComprasController">
+               <div class="row">
+                  <div class="col-md-8">
+                     <button class="submit-lente" type="submit">
+                     <i class="fa fa-search"></i> </button>
+                     <input type="search" class="form-control" ng-model="search" >
+                  </div>
+                  <div class="col-md-12" >
+                     <div class="table-responsive">
+                        <table id="lista-compras" class="table table-condensed cf ">
+                           <thead>
+                              <tr>
+                                 <th>Comprado?</th>
+                                 <th>Produto</th>
+                                 <th>Quantidade</th>
+                                 <th colspan="2">Ações</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr ng-repeat="item in itens | filter:search" class="comprado-{{ item.comprado }}">
+                                 <td>
+                                    <label>
+                                       <div class="checkbox"><input type="checkbox" ng-model="item.comprado"  ><span class="checkbox-material"><span class="check"></span>
+                                          </span>
+                                       </div>
+                                    </label>
+                                 </td>
+                                 <td><strong><a ng-href="{{linkVar}}">{{ item.produto }}</strong></a></td>
+                                 <td colspan="2">{{ item.quantidade }}</td>
+                                 <td colspan="2">
+                                    <button class="btn btn-primary" ng-click="editarItem($index)">
+                                    <i class="icon-pencil icon-white"></i> editar
+                                    </button>
+                                    <button class="btn-delete " ng-click="deleteItem($index)">
+                                    <i class="icon-trash icon-white"></i> deletar
+                                    </button>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+                  <div class="row ">
+                     <div class="col-md-4">
+                        <input type="text" class="form-control" ng-model="item.produto" placeholder="Produto">
+                     </div>
+                     <div class="col-md-4">
+                        <input type="number" class="form-control"  ng-model="item.quantidade" placeholder="Quantidade" class="input-small">
+                     </div>
+                     <div class="col-md-4">
+                        <button ng-hide="edit" class="btn btn-success" ng-click="adicionaItem()">
+                        <i class="icon-plus icon-white"></i> adicionar
+                        </button>
+                        <button ng-show="edit" class="btn btn-success" ng-click="applyChanges()">
+                        <i class="icon-ok icon-white"></i> salvar
+                        </button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <footer id="footer" class="page-footer">
+         <div class="footer-copyright">
+         <div class="container">
+            Copyright © 2015 - IBUY - Todos os direitos reservados 
+         </div>
+      </footer>
+      <!--  Scripts-->
+      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="js/angular-1.0.1.js"></script>
+      <script src="js/lista-compras.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+   </body>
+</html>
